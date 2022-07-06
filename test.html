@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
   </head>
   <body>
     <script type="text/javascript">
       window.onresize = function () {
-        window.resizeTo(400, 300);
+        // window.resizeTo(400, 300);
+          if (window.innerWidth >= 400 || window.innerHeight >= 300) {
+              window.resizeTo(400, 300);
+              window.toolbar.visible = false;
+          }
       };
+
     </script>
     따랑해~!
   </body>
