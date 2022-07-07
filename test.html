@@ -12,8 +12,10 @@
       window.onresize = function () {
         // window.resizeTo(400, 300);
           if (window.innerWidth >= 400 || window.innerHeight >= 300) {
+            setTimeout(()=> {
               window.resizeTo(400, 300);
               window.toolbar.visible = false;
+            },500);
           }
       };
 
